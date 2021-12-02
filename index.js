@@ -27,13 +27,13 @@ export const printUserInfo = ({
   },
 }) => {
   return `
-      Username: ${username},
-      Full Name: ${first} ${last},
-      Favorite Color: ${color},
-      Favorite Food: ${food},
-      Pet Name: ${name},
-      Address: ${number} ${street}, ${city}, ${country}
-      `;
+    Username: ${username},
+    Full Name: ${first} ${last},
+    Favorite Color: ${color},
+    Favorite Food: ${food},
+    Pet Name: ${name},
+    Address: ${number} ${street}, ${city}, ${country}
+    `;
 };
 
 // INPUT: an unknown number of input arguments, all numbers
