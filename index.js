@@ -88,7 +88,7 @@ export const getBrandNames = (obj) => Object.keys(obj);
 // OUTPUT: total number of sneaker types across all brands (14)
 export const totalSneakerCount = (obj) => {
   let sum = 0;
-  Object.keys(obj).forEach((innerObj) => (sum += obj.innerObj.shoes.length));
+  Object.keys(obj).forEach((innerObj) => (sum += obj[innerObj].shoes.length));
   return sum;
 };
 
@@ -99,4 +99,4 @@ export const totalSneakerCount = (obj) => {
 // convertToArray({}) => []
 // Source: https://edabit.com/challenge/pPNAs5PvB3WvnDwDM
 
-export const convertToArray = (obj) => {};
+export const convertToArray = (obj) => Object.entries(obj);
